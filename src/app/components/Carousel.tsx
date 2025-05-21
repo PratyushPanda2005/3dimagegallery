@@ -124,9 +124,9 @@ const Carousel: React.FC = () => {
   const getXPosition = (position: string) => {
     switch (position) {
       case "left":
-        return -150;
+        return -200;
       case "right":
-        return 150;
+        return 200;
       default:
         return 0;
     }
