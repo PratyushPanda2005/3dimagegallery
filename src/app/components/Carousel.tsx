@@ -186,7 +186,8 @@ const Carousel: React.FC = () => {
   // Find the current active card data
 
   return (
-    <main className="h-[100vh] bg-white flex items-center justify-center">
+    <main className="h-[100vh] bg-white flex flex-col items-center justify-center">
+        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold  flex justify-center md:justify-start w-full md:ml-12 italic ">Services</h1>
       <div className="carousel-container flex flex-col md:flex-row-reverse ">
         <div className="carousel " ref={carouselRef}>
           {cardData.map((card, index) => (

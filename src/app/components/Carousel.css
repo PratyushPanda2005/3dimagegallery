@@ -75,3 +75,8 @@
   background-size: cover;
   background-position: center;
 }
+
+
+main{
+    background-image: url('.././../../public/images/clouds-with-blue-sky.jpg');
+}
