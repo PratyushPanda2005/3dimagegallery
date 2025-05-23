@@ -117,7 +117,7 @@ const AircraftCardRight = ({ aircraft }: { aircraft: typeof aircraftData[0] }) =
 
 const FleetPage = () => {
   return (
-    <section id="fleetpage" className="min-h-screen overflow-hidden text-white">
+    <section id="fleetpage" className="min-h-screen overflow-x-hidden text-white">
       <div className="w-full h-full flex justify-center items-center">
         <div className="w-full h-full">
           <div className="grid grid-cols-2 h-full">
