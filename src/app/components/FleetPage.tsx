@@ -81,10 +81,10 @@ const lightjets = [
 
 const AircraftCard = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
   <div className="flex justify-center">
-    <Image src={aircraft.image} alt={aircraft.name} className="w-[160px] h-[160px] sm:w-xs sm:h-auto " />
+    <Image src={aircraft.image} alt={aircraft.name} className="w-[100px] h-[100px] sm:w-xs sm:h-auto " />
     <div className="flex flex-col justify-center">
       <h1 className="text-2xl sm:text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
-      <div className="bg-[#000f1c] p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
+      <div className="bg-[#000f1c] p-4 lg:p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
         <div className="-skew-x-4 w-full">
         <h1 className="text-lg italic font-semibold">
           Tailnumber: <span className="text-neutral-400">{aircraft.tailNumber}</span>
@@ -99,10 +99,10 @@ const AircraftCard = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
 
 const AircraftCardRight = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
   <div className="flex justify-center">
-    <Image src={aircraft.image} alt={aircraft.name} className="w-[160px] h-[160px] sm:w-xs sm:h-auto " />
+    <Image src={aircraft.image} alt={aircraft.name} className="w-[100px] h-[100px] sm:w-xs sm:h-auto " />
     <div className="flex flex-col justify-center">
       <h1 className="text-2xl sm:text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
-      <div className="bg-[#1d354b] p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
+      <div className="bg-[#1d354b] p-4 lg:p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
         <div className="-skew-x-4 w-full">
         <h1 className="text-lg italic font-semibold">
           Tailnumber: <span className="text-neutral-400">{aircraft.tailNumber}</span>
@@ -120,7 +120,7 @@ const FleetPage = () => {
     <section id="fleetpage" className="min-h-screen overflow-hidden">
       <div className="w-full h-full flex justify-center items-center">
         <div className="w-full h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+          <div className="grid grid-cols-2 h-full">
             {/* Turboprops Column */}
             <div className="bg-[#163659] opacity-95 min-h-screen">
               <div className="flex flex-col">
