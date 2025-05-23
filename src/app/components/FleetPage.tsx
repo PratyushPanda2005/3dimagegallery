@@ -81,9 +81,9 @@ const lightjets = [
 
 const AircraftCard = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
   <div className="flex justify-center">
-    <Image src={aircraft.image} alt={aircraft.name} className="w-xs h-auto " />
+    <Image src={aircraft.image} alt={aircraft.name} className="w-[160px] h-[160px] sm:w-xs sm:h-auto " />
     <div className="flex flex-col justify-center">
-      <h1 className="text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
+      <h1 className="text-2xl sm:text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
       <div className="bg-[#000f1c] p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
         <div className="-skew-x-4 w-full">
         <h1 className="text-lg italic font-semibold">
@@ -99,9 +99,9 @@ const AircraftCard = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
 
 const AircraftCardRight = ({ aircraft }: { aircraft: typeof aircraftData[0] }) => (
   <div className="flex justify-center">
-    <Image src={aircraft.image} alt={aircraft.name} className="w-xs h-auto" />
+    <Image src={aircraft.image} alt={aircraft.name} className="w-[160px] h-[160px] sm:w-xs sm:h-auto " />
     <div className="flex flex-col justify-center">
-      <h1 className="text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
+      <h1 className="text-2xl sm:text-4xl font-bold italic font-staatliches">{aircraft.name}</h1>
       <div className="bg-[#1d354b] p-12 -translate-x-8 relative w-[120%] [clip-path:polygon(10%_0%,85%_0%,75%_100%,0%_100%)]">
         <div className="-skew-x-4 w-full">
         <h1 className="text-lg italic font-semibold">
@@ -120,12 +120,12 @@ const FleetPage = () => {
     <section id="fleetpage" className="min-h-screen overflow-hidden">
       <div className="w-full h-full flex justify-center items-center">
         <div className="w-full h-full">
-          <div className="grid grid-cols-2 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
             {/* Turboprops Column */}
             <div className="bg-[#163659] opacity-95 min-h-screen">
               <div className="flex flex-col">
-                <h1 className="italic text-6xl font-bold text-center font-staatliches">
-                  <span className="text-9xl">T</span>URBO PROPS
+                <h1 className="italic text-4xl lg:text-6xl font-bold text-center font-staatliches">
+                  <span className="text-6xl lg:text-9xl">T</span>URBO PROPS
                 </h1>
                 <div className="flex flex-col gap-10 mt-10">
                   {aircraftData.map((aircraft, index) => (
@@ -137,8 +137,8 @@ const FleetPage = () => {
 
             {/* Jets Column */}
             <div className="bg-[#395a84] opacity-95 min-h-screen">
-              <h1 className="italic text-6xl font-bold text-center font-staatliches">
-                <span className="text-9xl">L</span>IGHT | MIDSIZE JETS
+              <h1 className="italic text-4xl lg:text-6xl font-bold text-center font-staatliches">
+                <span className="text-6xl lg:text-9xl">L</span>IGHT | MIDSIZE JETS
               </h1>
               <div className="flex flex-col gap-10 mt-10">
                   {lightjets.map((aircraft, index) => (
