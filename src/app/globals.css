@@ -40,5 +40,6 @@ body {
   #fleetpage {
     background-size: contain; 
     background-position: center center;
+    background-repeat: repeat;
   }
 }
