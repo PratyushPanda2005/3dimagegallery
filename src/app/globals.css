@@ -28,9 +28,19 @@ body {
   color: var(--foreground);
 }
 
-#fleetpage{
-  background-image: url(../../public/images/LIGHT\ BLUE.svg);
+#fleetpage {
+  background-image: url('/images/LIGHT BLUE.svg'); /* Fixed path for Next.js */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #fleetpage {
+    background-size: contain; 
+    background-position: center center;
+  }
 }
